@@ -1,4 +1,5 @@
 exports.sendSms = async (phoneNumber, message, next) => {
+    console.log('sending sms');
 	const intlPhone =  ((phoneNumber.startsWith('251')) || (phoneNumber.startsWith('251')) )?`${phoneNumber}`:phoneNumber.slice(-12);	
 	const username = (phoneNumber.startsWith('251') || phoneNumber.startsWith('+251'))?`mamapays`:`mobifins`;
     const requestBod = {
@@ -43,8 +44,8 @@ exports.callAnEndPointToVps = async () => {
         );
 
         // const value = await response.json();
-	console.log('inside method',response)
-    if(response.status>=500){
+	// console.log('inside method',response)
+    if(response.status>=300){
     return false;        
     }
     return true;        
