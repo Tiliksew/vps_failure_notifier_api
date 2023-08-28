@@ -1,0 +1,19 @@
+{
+  "name": "vps_failure_notifier_api",
+  "version": "1.0.0",
+  "description": "an api used to notify via sms and other methods if the vps is not working.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon start"
+
+  },
+  "author": "Tiliksew Mulugeta",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}
